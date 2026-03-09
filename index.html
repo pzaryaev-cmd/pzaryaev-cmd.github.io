@@ -13,6 +13,7 @@
             --muted: #888;
             --card-bg: #1a1d21;
             --link-color: #ffffff;
+            --tg-blue: #0088cc;
         }
         body {
             margin: 0;
@@ -39,6 +40,7 @@
             font-weight: 600;
             border-radius: 4px;
             transition: transform 0.2s, opacity 0.3s;
+            cursor: pointer;
         }
         .btn:hover { opacity: 0.9; transform: translateY(-2px); }
         section { padding: 80px 20px; max-width: 1000px; margin: 0 auto; border-bottom: 1px solid #222; }
@@ -53,15 +55,39 @@
         .contact-links a { color: var(--link-color); text-decoration: none; margin: 0 10px; border-bottom: 1px solid transparent; transition: border 0.3s; }
         .contact-links a:hover { border-bottom: 1px solid var(--accent); }
         footer { padding: 80px 20px; text-align: center; color: var(--muted); background: #0a0c0e; }
+        .tg-block {
+            background: #1a1a1a;
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            border-radius: 12px;
+            margin: 40px auto;
+            max-width: 800px;
+            border: 1px solid #333;
+        }
+        .tg-btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: var(--tg-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .tg-btn:hover { background: #0077b3; transform: scale(1.02); }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .grid { grid-template-columns: 1fr; } }
     </style>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body>
 
 <header>
     <h1>Из операционного хаоса в управляемую культуру</h1>
-    <p class="hero-sub">Диагностика и корректировка управленческих моделей для тех-стартапов и бизнеса. 12 лет международного опыта в архитектуре менеджмента.</p>
-    <a href="https://t.me/washoutmybrain" class="btn">Обсудить ваш кейс</a>
+    <p class="hero-sub">Диагностика и корректировка управленческих моделей для тех-стартапов и бизнеса. 12 лет международного опыта в архитектуре менеджмента (ex-Uber, Yandex, VK).</p>
+    <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/p-zaryaev/mentoring'});return false;" class="btn">Обсудить ваш кейс</a>
 </header>
 
 <section id="manifesto">
@@ -80,7 +106,7 @@
                 <li>Проектирование архитектуры управления</li>
                 <li>Диагностика стиля фаундеров</li>
             </ul>
-            <a href="https://t.me/washoutmybrain" style="color:var(--accent); font-weight:600; text-decoration:none; display:block; margin-top:20px;">→ Запросить план масштабирования</a>
+            <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/p-zaryaev/mentoring'});return false;" style="color:var(--accent); font-weight:600; text-decoration:none; display:block; margin-top:20px;">→ Запросить план масштабирования</a>
         </div>
         <div class="card">
             <h3>Застой или скрытые конфликты</h3>
@@ -89,24 +115,24 @@
                 <li>Поиск слепых зон менеджмента</li>
                 <li>Корректировка корпоративной ДНК</li>
             </ul>
-            <a href="https://t.me/washoutmybrain" style="color:var(--accent); font-weight:600; text-decoration:none; display:block; margin-top:20px;">→ Записаться на диагностику системы</a>
+            <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/p-zaryaev/mentoring'});return false;" style="color:var(--accent); font-weight:600; text-decoration:none; display:block; margin-top:20px;">→ Записаться на диагностику</a>
         </div>
         <div class="card">
-            <h3>Дефицит управленческих навыков</h3>
+            <h3>Управленческий менторинг</h3>
             <p>Развитие насмотренности и корректировка стиля управления для лидеров команд.</p>
             <ul>
                 <li>Диагностика индивидуального стиля</li>
                 <li>Формирование системного мышления</li>
             </ul>
-            <a href="https://t.me/washoutmybrain" style="color:var(--accent); font-weight:600; text-decoration:none; display:block; margin-top:20px;">→ Разобрать кейс в моменте</a>
+            <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/p-zaryaev/mentoring'});return false;" style="color:var(--accent); font-weight:600; text-decoration:none; display:block; margin-top:20px;">→ Разобрать кейс в моменте</a>
         </div>
     </div>
 </section>
 
 <section id="about">
     <h2>Обо мне</h2>
-    <p>Меня зовут <strong>Пётр Заряев</strong>. 12 лет я проектировал и отлаживал управленческие системы в глобальных корпорациях.
-Моя экспертиза — на стыке операционной эффективности и корпоративной антропологии. Сегодня я помогаю компаниям в СНГ устранять системные искажения в управлении и строить работающие организационные модели..</p>
+    <p>Меня зовут <strong>Пётр Заряев</strong>. 12 лет я проектировал и отлаживал управленческие системы в глобальных корпорациях. Моя экспертиза — на стыке операционной эффективности и корпоративной антропологии. Сегодня я помогаю компаниям устранять системные искажения в управлении и строить работающие организационные модели.</p>
+</section>
 
 <section id="process">
     <h2>Процесс взаимодействия</h2>
@@ -123,6 +149,12 @@
         <div><strong>Strategy & Implementation Plan:</strong> Детальный план трансформации с метриками, этапами и стоимостью реализации.</div>
     </div>
 </section>
+
+<div class="tg-block">
+    <h2>Гнусный HR: Как не надо управлять</h2>
+    <p>Разбираю управленческие ошибки и «анти-паттерны», которые видел за 12 лет в BigTech. Без цензуры о том, как строить системы, которые не ломаются.</p>
+    <a href="https://t.me/hr_gnusny" target="_blank" class="tg-btn">Читать разборы в Telegram</a>
+</div>
 
 <footer>
     <div class="contact-links">
